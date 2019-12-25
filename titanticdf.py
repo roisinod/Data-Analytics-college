@@ -28,10 +28,3 @@ print(df_with_class.groupby('Sex').mean())
 #print(df['Sex'])
 print(df[(df['Survived'] == 1) & (df['Sex'] == 'female')].count())
 print(df[(df['Survived'] == 0) & (df['Sex'] == 'female')].count())
-print(df.groupby('Sex').median())
-#number of men v women who survived
-print(df.groupby('Sex')[['Survived']].mean())
-#the people who paid the highest survived or not
-
-#how many from the class died
-print(df.groupby('Pclass')[['Survived']].mean())
